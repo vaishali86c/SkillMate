@@ -1,112 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icons/logo_transparent.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/icons/logo_transparent.png" />
     <title>SkillMate</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- background video -->
     <div>
-        <video plays-inline autoplay muted loop class="back-video">
-            <source src="video/production_id_4492643 (2160p).mp4" type="video/mp4">
-        </video>
+      <video plays-inline autoplay muted loop class="back-video">
+        <source
+          src="video/production_id_4492643 (2160p).mp4"
+          type="video/mp4"
+        />
+      </video>
     </div>
 
     <!-- menu option shows in small screen -->
     <div class="menu" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
     </div>
 
     <!-- navigation bar -->
     <header class="header">
-        <a class="main-logo" href="#">SkillMate</a>
+      <a class="main-logo" href="#">SkillMate</a>
 
-        <nav id="navbar" class="navbar">
-            <a href="#">Home</a>
-            <a href="#">How it Works</a>
-            <a href="#">About Us</a>
-            <a href="#">FAQ</a>
-        </nav>
-        <button onclick="document.getElementById('id01').style.display='block'"><a class="login" style="--clr:rgba(206, 46, 206, 0.997)" href="#"><span>LOGIN</span><i></i></a></button>
+      <nav id="navbar" class="navbar">
+        <a href="#">Home</a>
+        <a href="#">How it Works</a>
+        <a href="#">About Us</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <button onclick="document.getElementById('id01').style.display='block'">
+        <a class="login" style="--clr: rgba(206, 46, 206, 0.997)" href="#"
+          ><span>LOGIN</span><i></i
+        ></a>
+      </button>
     </header>
 
     <!-- centered text with create account button -->
     <div class="moto">
-        <h1 class="responsive-text">Match, Learn, Thrive</h1>
-        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a class="create-acc" href="#">Create account</a></button>
+      <h1 class="responsive-text">Match, Learn, Thrive</h1>
+      <button
+        onclick="document.getElementById('id02').style.display='block'"
+        style="width: auto"
+      >
+        <a class="create-acc" href="#">Create account</a>
+      </button>
     </div>
 
-
     <!-- LOGIN POPUP FORM -->
-    
+
     <div id="id01" class="modal">
-  
-        <form class="modal-content animate" action="/action_page.php" method="post">
-          <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="closebtn" title="Close Modal">&times;</span>
-            <img src="images/login-form-img-avtar/f-avatar.png" alt="Avatar" class="avatar">
-          </div>
-      
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-              
-            <button class="loginFormButton" type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
-          </div>
-        </form>
-      </div>
-      
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="closebtn"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img
+            src="images/login-form-img-avtar/f-avatar.png"
+            alt="Avatar"
+            class="avatar"
+          />
+        </div>
 
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
 
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
 
-      <!-- create account  -->
-      <div id="id02" class="modal-createAccount">
-        <span onclick="document.getElementById('id02').style.display='none'" class="close-createAccount" title="Close Modal">&times;</span>
-        <form class="modal-content-createAccount" id = "animate-createAccount" action="/action_page.php">
-          <div class="container-createAccount">
-            <h1>Sign Up</h1>
-            <p>Please fill in this form to create an account.</p>
-            <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-      
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-            
-            <label>
-              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-            </label>
-      
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-      
-            <div class="clearfix">
-              <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn-createAccount">Cancel</button>
-              <button type="submit" class="signupbtn-createAccount">Sign Up</button>
-            </div>
+          <button class="loginFormButton" type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('id01').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <!-- create account  -->
+    <div id="id02" class="modal-createAccount">
+      <span
+        onclick="document.getElementById('id02').style.display='none'"
+        class="close-createAccount"
+        title="Close Modal"
+        >&times;</span
+      >
+      <form
+        class="modal-content-createAccount"
+        id="animate-createAccount"
+        action="/action_page.php"
+      >
+        <div class="container-createAccount">
+          <h1>Sign Up</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr />
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            required
+          />
+
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
+          </label>
+
+          <p>
+            By creating an account you agree to our
+            <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+          </p>
+
+          <div class="clearfix">
+            <button
+              type="button"
+              onclick="document.getElementById('id02').style.display='none'"
+              class="cancelbtn-createAccount"
+            >
+              Cancel
+            </button>
+            <button type="submit" class="signupbtn-createAccount">
+              Sign Up
+            </button>
           </div>
-        </form>
-      </div>
-      
+        </div>
+      </form>
+    </div>
+
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

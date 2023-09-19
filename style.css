@@ -683,6 +683,10 @@ input[type=text], input[type=password] {
     cursor: pointer;
   }
   
+  .clearfix {
+    display: flex;
+    gap: 10px;
+  }
 
   /* Clear floats */
   .clearfix::after {

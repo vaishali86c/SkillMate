@@ -633,6 +633,10 @@ input[type=text], input[type=password] {
     width: 50%;
     border-radius: 10px;
   }
+
+  .signupheading-createAccount {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
   
   /* Add padding to container elements */
   .container-createAccount {

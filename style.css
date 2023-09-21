@@ -638,6 +638,11 @@ input[type=text], input[type=password] {
     font-family: 'Roboto Condensed', sans-serif;
   }
   
+  .detail-createAccount {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+
   /* Add padding to container elements */
   .container-createAccount {
     padding: 16px;
